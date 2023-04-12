@@ -1,5 +1,5 @@
-# How to use MySQL in Copado Robotic Testing
-This example shows how to connect to a database and add and remove data using MySQL protocol in
+# MySQL in Copado Robotic Testing
+How to connect to a database and add and remove data using MySQL protocol in
 Copado Robotic Testing.
 
 ## Dependencies (check requirements.txt file)
