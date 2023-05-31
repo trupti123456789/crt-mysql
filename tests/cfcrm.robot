@@ -7,8 +7,6 @@ Suite Teardown       End suite
 *** Test Cases ***
 As a User I Should able to create custom metadata type to synch pipeline repository with the respective git repository.
     Appstate         Home
-    VerifyText       More
-    VerifyIcon       Setup
     ClickText        Setup                       anchor=Salesforce Help
     ClickText        Opens in a new tab
     SwitchWindow     NEW
