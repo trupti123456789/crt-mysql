@@ -25,7 +25,6 @@ As a User I Should able to create custom metadata type to synch pipeline reposit
 
 As a User I should able to do cleanup of unused data from 3 months in your org(Soft Delete) 
     ClickText        App Launcher
-
     ClickText        View All                    parent=LIGHTNING-BUTTON
     UseModal         On
     ClickText        CloudFulcrum Extensions for Copado
@@ -93,15 +92,10 @@ As a user I should able to Archive some of the records by 3 Months as a retentio
     UseTable         Select All
     ClickCell        r2c2                        on
     ClickCell        r3c2                        on
-    ClickCell        r4c2                        on                          
+    ClickCell        r4c2                        on
     ClickText        Next
     ClickText        Archived
     ClickText        Ok
-
-As a user I should able to see Devops Maturity Report.
-    ClickText        Devops Maturity Report
-    ClickText        View Report (Success Ratio by week per month)
-
 As a user I should able to cleanup Git Branches Unused Records from 3 months of Branch type user story.
     ClickText        Getting Started
     ClickText        Copado Cleanup Utilities    anchor=App Launcher
@@ -112,6 +106,8 @@ As a user I should able to cleanup Git Branches Unused Records from 3 months of 
     ClickText        User Story                  anchor=Branch Type
     ClickText        3 Months                    anchor=Retention Window
     ClickText        Run Now                     anchor=Execute
+    ClickText        Next
+    UseTable         Select All
     ClickCell        r2c2                        on
     ClickCell        r3c2                        on
     ClickCell        r4c2                        on
@@ -128,7 +124,13 @@ As a user I should able to cleanup Git Branches Unused Records from 3 months of 
     ClickText        Promotion Branch            anchor=Branch Type
     ClickText        3 Months                    anchor=Retention Window
     ClickText        Run Now                     anchor=Execute
+    ClickText        Next
     ClickCell        r2c2                        on
     ClickCell        r3c2                        on
     ClickCell        r4c2                        on
+    ClickText        Next
     ClickText        Delete
+
+As a user I should able to see Devops Maturity Report.
+    ClickText        Devops Maturity Report
+    ClickText        Refresh
