@@ -11,6 +11,7 @@ ${xpath1}= (//div([contains(@class, ' setupGear')]))
 As a User I Should able to create custom metadata type to synch pipeline repository with the respective git repository.
     Appstate         Home
     ClickText        ${xpath1}
+    ${Setup_Gear}=    Get Text                    xpath=(//div//li//div[contains(@class, ' setupGear')])
     ClickText        Opens in a new tab
     SwitchWindow     NEW
     SwitchWindow     2
