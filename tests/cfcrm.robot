@@ -11,7 +11,7 @@ Suite Teardown       End suite
 *** Test Cases ***
 As a User I Should able to create custom metadata type to synch pipeline repository with the respective git repository.
     Appstate         Home
-    ${Setup_Gear}=    Ckick Text                    xpath=(//div//li//div[contains(@class, ' setupGear')])
+    ${Setup_Gear}=    Click Text                    xpath\=(//div[contains(@class, ' setupGear')])
     ClickText        ${Setup_Gear}
     ClickText        Opens in a new tab
     SwitchWindow     NEW
