@@ -11,6 +11,7 @@ ${login_url}                    https://YOURDOMAIN.my.salesforce.com            
 ${home_url}                     ${login_url}/lightning/page/home
 
 
+
 *** Keywords ***
 Setup Browser
     Set Library Search Order    QWeb                        QForce
