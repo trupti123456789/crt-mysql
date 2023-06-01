@@ -4,14 +4,14 @@ Suite Setup          Setup Browser
 Suite Teardown       End suite
 
 *** Variables ***
-${xpath1}= (//div([contains(@class, ' setupGear')]))
+${Setup_Gear}=    Get Text                    xpath=(//div//li//div[contains(@class, ' setupGear')])
 
 
 *** Test Cases ***
 As a User I Should able to create custom metadata type to synch pipeline repository with the respective git repository.
     Appstate         Home
-    ClickText        ${xpath1}
-    ${Setup_Gear}=    Get Text                    xpath=(//div//li//div[contains(@class, ' setupGear')])
+    
+    ClickText        ${Setup_Gear}
     ClickText        Opens in a new tab
     SwitchWindow     NEW
     SwitchWindow     2
