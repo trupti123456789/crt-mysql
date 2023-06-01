@@ -1,16 +1,17 @@
 *** Settings ***
 Resource             ../resources/Common.robot
+Library               QWeb
 Suite Setup          Setup Browser
 Suite Teardown       End suite
 
 *** Variables ***
-${Setup_Gear}=    Get Text                    xpath=(//div//li//div[contains(@class, ' setupGear')])
+
 
 
 *** Test Cases ***
 As a User I Should able to create custom metadata type to synch pipeline repository with the respective git repository.
     Appstate         Home
-    
+    ${Setup_Gear}=    Ckick Text                    xpath=(//div//li//div[contains(@class, ' setupGear')])
     ClickText        ${Setup_Gear}
     ClickText        Opens in a new tab
     SwitchWindow     NEW
