@@ -40,9 +40,9 @@ Home
     ${login_status} =           IsText                      To access this page, you have to log in to Salesforce.    2
     Run Keyword If              ${login_status}             Login
     ClickText                   App Launcher
-    ClickText                   CloudFulcrum Extensions for Copado
-    ClickText                   Getting Started
-    VerifyTitle                 Getting Started
+    ClickText                   Sales
+    ClickText                   Home
+    VerifyTitle                Home
 
 
 
