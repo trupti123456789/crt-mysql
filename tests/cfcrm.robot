@@ -35,9 +35,8 @@ As a User I should able to do cleanup of unused data from 3 months in your org(S
     UseTable          Select All
     ClickCell         r2c2                        on
     ClickCell         r3c2                        on
-    ClickCell         r4c2                        on
     ClickText         Next
-    ClickText         Recycle Bin
+    ClickText         Recycle Bin                 timeout=120s
     ClickText         Ok
     ClickText         AuditLog
     VerifyText        Recently Viewed             timeout=120s
@@ -60,11 +59,9 @@ As a User I should able to do cleanup of unused data from 3 months in your org(H
     ClickText         Okay
     UseTable          Select All
     ClickCell         r2c2                        on
-    ClickCell         r3c2                        on
-    ClickCell         r4c2                        on
     ClickText         Next
-    ClickText         Permanently Delete
-    ClickText         Ok
+    ClickText         Permanently Delete          timeout=120s
+    UseModal          On
     ClickText         AuditLog
     VerifyText        Recently Viewed             timeout=120s
     ClickText         Select a List View
