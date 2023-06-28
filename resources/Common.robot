@@ -1,9 +1,10 @@
 
 *** Settings ***
-Library                         QWeb
+@Library                         QWeb
 Library                         QForce
 Library                        QMobile
 Library                         String
+Library                        SeleniumLibrary
 Suite Setup                     OpenBrowser                 about:blank                 edge
 
 *** Variables ***
