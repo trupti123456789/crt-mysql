@@ -38,7 +38,7 @@ As a User I should able to do cleanup of unused data from 3 months in your org(S
     ClickText         Recycle Bin
     Press Key         Enter                       \\\13                       # ASCII code for the Enter key
     VerifyText        OK
-    ClickText       OK       
+    ClickText         OK                          anchor=Cancel
 
     ClickText         AuditLog
     VerifyText        Recently Viewed             timeout=120s
