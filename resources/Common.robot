@@ -40,9 +40,9 @@ Home
     GoTo                        ${home_url}
     ${login_status} =           IsText                      To access this page, you have to log in to Salesforce.    2
     Run Keyword If              ${login_status}             Login
-   ClickText                   Sales
-   ClickText                    Home
-    #ClickText                   Getting Started
+   #ClickText                   Sales
+   #ClickText                    Home                    
+    ClickText                   Getting Started
    
 
 
