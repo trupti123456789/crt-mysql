@@ -2,6 +2,7 @@
 *** Settings ***
 Library                         QWeb
 Library                         QForce
+Library                        QMobile
 Library                         String
 Suite Setup                     OpenBrowser                 about:blank                 edge
 
