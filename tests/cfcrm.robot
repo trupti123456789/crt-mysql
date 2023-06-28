@@ -36,16 +36,16 @@ As a User I should able to do cleanup of unused data from 3 months in your org(S
     ClickCell         r2c2                        on
     ClickText         Next
     ClickText         Recycle Bin
-    Press Key          Enter                       \\13                        # ASCII code for the Enter key
+    Press Key         Enter                       \\13                        # ASCII code for the Enter key
     PressKey          login_button                \\13                        # ASCII code for the Enter key
     VerifyText        OK
     sleep             2
     ClickText         OK                          anchor=Cancel
-
-
+    UseModal          On
+    ClickElement      OK
+    Click Button      Ok
     ClickText         Recycle Bin
-
-    ClickText         AuditLog
+   Handle Alert
     VerifyText        Recently Viewed             timeout=120s
     ClickText         Select a List View
     UseModal          On
