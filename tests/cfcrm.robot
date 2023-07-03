@@ -36,6 +36,7 @@ As a User I should able to do cleanup of unused data from 3 months in your org(S
     ClickCell                  r2c2                        on
     ClickText                  Next
     ClickText                  Recycle Bin
+    ClickText                  Ok
     Press Key                  Enter                       \\13                        # ASCII code for the Enter key
     PressKey                   login_button                \\13                        # ASCII code for the Enter key
     VerifyText                 OK
