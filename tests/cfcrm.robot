@@ -36,7 +36,9 @@ As a User I should able to do cleanup of unused data from 3 months in your org(S
     ClickCell                  r2c2                        on
     ClickText                  Next
     ClickText                  Recycle Bin
-    ClickText                  Ok
+
+    PressKey          OK                        \\13
+
     Press Key                  Enter                       \\13                        # ASCII code for the Enter key
     PressKey                   login_button                \\13                        # ASCII code for the Enter key
     VerifyText                 OK
@@ -46,10 +48,8 @@ As a User I should able to do cleanup of unused data from 3 months in your org(S
     ClickElement               OK
     Click Button               Ok
     ClickText                  Recycle Bin
-    Handle Alert
-    ${message} =               Handle Alert                action=Accept               timeout=2s # Accept alert and get its message.
-    Input Text Into Alert      OK                          action=Accept
-    Alert Should Be Present    OK                          action=Accept
+    CloseAlert                 Accept
+    Sleep                      4
     VerifyText                 Recently Viewed             timeout=120s
     ClickText                  Select a List View
     UseModal                   On
