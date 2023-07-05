@@ -19,7 +19,7 @@ As a User I Should able to create custom metadata type to synch pipeline reposit
     TypeText          Label                       Production Status
     TypeText          Value                       Draft
     ClickText         Save
-
+    Sleep             2
 As a User I should able to do cleanup of unused data from 3 months in your org(Soft Delete) 
     ClickText         App Launcher
     ClickText         View All                    parent=LIGHTNING-BUTTON
@@ -34,6 +34,7 @@ As a User I should able to do cleanup of unused data from 3 months in your org(S
     ClickText         Okay
     UseTable          Select All
     ClickCell         r2c2                        on
+    Sleep             2
     ClickText         Next
     ClickText         Recycle Bin
     CloseAlert        Accept
@@ -45,9 +46,11 @@ As a User I should able to do cleanup of unused data from 3 months in your org(S
     ClickText         All
     UseTable          Item Number
     ClickCell         r1c2                        on
+    Sleep             2
     VerifyText        Soft Delete                 anchor=Deletion Type
     ClickCell         r2c2                        on
     VerifyText        Soft Delete                 anchor=Deletion Type
+    Sleep             2
 As a User I should able to do cleanup of unused data from 3 months in your org(Hard Delete)
     ClickText         Getting Started
     ClickText         Copado Cleanup Utilities    anchor=App Launcher
@@ -59,6 +62,7 @@ As a User I should able to do cleanup of unused data from 3 months in your org(H
     ClickText         Okay
     UseTable          Select All
     ClickCell         r2c2                        on
+    Sleep             2
     ClickText         Next
     ClickText         Permanently Delete          timeout=120s
     CloseAlert        Accept
@@ -70,7 +74,7 @@ As a User I should able to do cleanup of unused data from 3 months in your org(H
     UseTable          Item Number
     ClickCell         r1c2                        on
     ClickCell         r2c2                        on
-
+    Sleep             2
 As a user I should able to Archive some of the records by 3 Months as a retention window.
     ClickText         Getting Started
     ClickText         Copado Cleanup Utilities    anchor=App Launcher
@@ -80,9 +84,11 @@ As a user I should able to Archive some of the records by 3 Months as a retentio
     ClickText         Next
     UseTable          Select All
     ClickCell         r4c2                        on
+    Sleep             2
     ClickText         Next
     ClickText         Archived
     CloseAlert        Accept
+    Sleep             2
 As a user I should able to cleanup Git Branches Unused Records from 3 months of Branch type user story.
     ClickText         Getting Started
     ClickText         Copado Cleanup Utilities    anchor=App Launcher
@@ -96,10 +102,11 @@ As a user I should able to cleanup Git Branches Unused Records from 3 months of 
     ClickText         Next
     UseTable          Select All
     ClickCell         r4c2                        on
+    Sleep             2
     ClickText         Next
     ClickText         Delete
     CloseAlert        Accept
-
+    Sleep             2
 As a user I should able to cleanup Git Branches Unused Records from 3 months of Branch type Promotion branch.
     ClickText         Getting Started
     ClickText         Copado Cleanup Utilities    anchor=App Launcher
@@ -112,9 +119,12 @@ As a user I should able to cleanup Git Branches Unused Records from 3 months of 
     ClickText         Run Now                     anchor=Execute
     ClickText         Next
     ClickCell         r2c2                        on
+    Sleep             2
     ClickText         Next
     ClickText         Delete
     CloseAlert        Accept
+    Sleep             2
 As a user I should able to see Devops Maturity Report.
     ClickText         Devops Maturity Report
     ClickText         Refresh
+    
